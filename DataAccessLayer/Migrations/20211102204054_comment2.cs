@@ -2,9 +2,15 @@
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class newslatter : Migration
+    public partial class comment2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "NewsLatters");
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
                 name: "NewsLatters",
@@ -19,12 +25,6 @@ namespace DataAccessLayer.Migrations
                 {
                     table.PrimaryKey("PK_NewsLatters", x => x.MailID);
                 });
-        }
-
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
-            migrationBuilder.DropTable(
-                name: "NewsLatters");
         }
     }
 }

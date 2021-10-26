@@ -31,7 +31,7 @@ namespace CoreDemo.Controllers
             {
                 p.WriterStatus = true;
                 p.WriterAbout = "Test";
-                vm.WriterAdd(p);
+                vm.TAdd(p);
                 return RedirectToAction("Index", "Blog");
             }
             else 

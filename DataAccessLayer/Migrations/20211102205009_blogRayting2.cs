@@ -2,22 +2,22 @@
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class guncel : Migration
+    public partial class blogRayting2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.RenameColumn(
-                name: "CommenUsetrContent",
-                table: "Comments",
-                newName: "CommentUserContent");
+                name: "BlogRaytingCunt",
+                table: "BlogRaytings",
+                newName: "BlogRaytingCount");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.RenameColumn(
-                name: "CommentUserContent",
-                table: "Comments",
-                newName: "CommenUsetrContent");
+                name: "BlogRaytingCount",
+                table: "BlogRaytings",
+                newName: "BlogRaytingCunt");
         }
     }
 }
